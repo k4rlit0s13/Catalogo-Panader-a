@@ -69,5 +69,23 @@ Cantidaddeproducto=int(input("Cuantas unidades deseas: "))
 preciodelproducto=menu[listaCategoria[SelecciónlistaCategoria]]["producto"][ProductoSeleccionado]["valor"]
 #Creamos una variable con el precio total que sería la operación de multiplicar la cantidad por el precio
 Preciototal=preciodelproducto*Cantidaddeproducto
+#imprimimos el resultado
+print("El pago total a realizar es de: ", Preciototal)
+#dejaremos que el usuario pueda meter su dinero, para esto una variable que se guarde el dato
+Dinerodelusuario=int(input("Cuanto dinero desea ingresar: "))#tenemos la cantidad de dinero ahora toca comparar si puede comprar o no
+#realizamos una condici[on para pagar ahora
+if Dinerodelusuario==Preciototal:
+    print("Gracias por su compra usuario, que tenga un excelente día :D")#si es igual al precio total no hay vueltos
 
-print(Preciototal)
+
+
+elif Dinerodelusuario>Preciototal:#si es mayor debemos crear una variable de vueltos
+    vueltos=Dinerodelusuario-Preciototal
+    print("Gracias por su compra usuario, aquí tienes tus vueltos: ", vueltos)                
+
+#pero sino se cumple nada de esto entonces vamos a hacer que no pueda comprar con un comentario y que pues deba ingresar más dinero
+else:
+    print("Me temo que te hace falta dinero :c lo sentimos pero debes ingresar más dinero")
+
+
+##TENEMOS ToDO EL CATÁLOGO AHORA PERO FALTAN LAS PROMOCIONES, QUE HACEMOS?
