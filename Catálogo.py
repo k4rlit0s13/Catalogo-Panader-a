@@ -24,4 +24,22 @@ menu= dict({
     "Pasteles":{"producto": list([{"nombre": "Torta de chocolate", "valor":40000},{"nombre":"Tarta de manzana","valor":35000},{"nombre":"Torta de zanahoria","valor":45000},{"nombre":"Tarta red Velvet","valor":40000},{"nombre":"Tarta de limón","valor":50000},{"nombre":"Torta de queso","valor":45000},{"nombre":"Torta de Frutas","valor":50000},{"nombre":"Tarta Sacher","valor":55000},{"nombre":"Torta 3 leches","valor":40000},{"nombre":"Torta de nueces y caramelo","valor":50000} ]), "Promociones":list ([ {"indice":0,"nombre":"Descuento del 50% por ser tu cumpleaños","unidades":1, "descuento": 0.50} , {"indice":0,"nombre":"Descuento del 20% por comprar 2 unidades","unidades":2, "descuento": 0.05} ]) }
 })#cierre deldiccionario
 
-#UNA VEZ ORGANIZADA LA INFO PODEMOS 
+#UNA VEZ ORGANIZADA LA INFO PODEMOS
+
+#Tenemos que meter un algoritmo que muestre primero las categorias: comenzamos con un mensaje de bienvenida
+
+# Mensaje del banner
+mensaje_banner = "Hola usuario, bienvenido a Panadería Carlos, ¿qué se te antoja :D?"
+
+# Imprimir el banner
+print("*" * 70)
+print("*" + " " * 68 + "*")
+print("*" + mensaje_banner.center(68) + "*")
+print("*" + " " * 68 + "*")
+print("*" * 70)
+
+#queremos mostrar las categorias sacaremos las keys 
+listaCategoria=menu.keys()
+listaCategoria=list(listaCategoria)
+for i, val in enumerate(listaCategoria):
+    print(f"{i}. {val}")
