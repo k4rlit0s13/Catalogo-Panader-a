@@ -66,7 +66,8 @@ ProductoSeleccionado=int(input("Seleccione un producto: "))#de esta manera cream
 #ahora toca pedir una cantidad al usuario del producto escojído para calcular un precio diferente
 Cantidaddeproducto=int(input("Cuantas unidades deseas: "))
 #deberiamos mostrarle al usuario ahora cuanto es el nuevo valor que tendrá su pedido junto mostrar que producto
+preciodelproducto=menu[listaCategoria[SelecciónlistaCategoria]]["producto"][ProductoSeleccionado]["valor"]
 #Creamos una variable con el precio total que sería la operación de multiplicar la cantidad por el precio
-Preciototal=["valor"]*Cantidaddeproducto
+Preciototal=preciodelproducto*Cantidaddeproducto
 
-print()
+print(Preciototal)
