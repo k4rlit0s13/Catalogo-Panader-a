@@ -8,12 +8,13 @@
 #Diccionario: bloque que retendrá toda nuestra información
 menu=dict({
 
-#categorías
+#categorías(En Python, cuando defines un diccionario, cada par clave-valor debe estar separado por una coma ,)
 
 #CERO
-    Dulces=
+    "Dulces":{},
 #UNO
-    Salados=
+    "Salados":{},
 #DOS
-    Pasteles=
+    "Pasteles":{}, 
+    
 })
