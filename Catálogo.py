@@ -10,11 +10,12 @@ menu=dict({
 
 #categorías(En Python, cuando defines un diccionario, cada par clave-valor debe estar separado por una coma ,)
 
+#ahora agregamos la info dentro de estas para tener pares de Clave-Valor
 #CERO
-    "Dulces":{},
+    "Dulces":{"nombre": "", "valor":""},
 #UNO
-    "Salados":{},
+    "Salados":{"nombre": "", "valor":""},
 #DOS
-    "Pasteles":{}, 
+    "Pasteles":{"nombre": "", "valor":""}, 
     
 })
