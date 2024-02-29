@@ -16,8 +16,7 @@ menu=dict({
 #CERO
     "Dulces": {"producto": list([{"nombre":"Croissants", "valor":3500},{"nombre": "Donas", "valor":2000},{"nombre": "Pastelitos", "valor":1500},{"nombre":"Galletas", "valor":7000},{"nombre":"Pan dulce","valor":5000},{"nombre":"Ensaimadas", "valor":6000},{"nombre":"Tartaletas", "valor":4500},{"nombre":"Bizcochos", "valor":2500},{"nombre":"Palmeras", "valor":2000},{"nombre":"Conchas", "valor":2000}])},
 #UNO
-    "Salados":{"nombre": "", "valor":""},
-#DOS
+    "Salados": {"producto": list([{"nombre":"Baguettes", "valor":5000},{"nombre":"Pan de masa madre","valor":6000},{"nombre":"Pan de ajo","valor":4000},{"nombre":"Ocaccia","valor":8000},{"nombre":"Pretzels","valor":4500},{"nombre":"Bol de queso","valor":2500},{"nombre":"Empanadas","valor":2000},{"nombre":"Pan de centeno","valor":5500},{"nombre":"Pan de aceitunas","valor":4500},{"nombre":"Pan de hierbas","valor":4000},]),
     "Pasteles":{"nombre": "", "valor":""}, 
     
 })
