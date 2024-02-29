@@ -14,8 +14,8 @@ menu= dict({
 #ahora agregamos la info dentro de estas para tener pares de Clave-Valor
 #Dentro de las claves-valor irá la información del nombre del producto-precio del producto.(números no llevan comillas doblres por ser valores numéricos)
 #Categoria CERO
-    #ahora agregar como segunda lista acompañando la categoría Dulces son las Promociones, ATENCIÓN la misma categoria tiene 2 listas de la siguiente manera = >>>nombre diccionatoi=dict({ "nombrelista":list{["":""]}, "nombrelista":list{["":""]} })
-
+    #ahora agregar como segunda lista acompañando la categoría Dulces son las Promociones, ATENCIÓN la misma categoria tiene 2 listas de la siguiente manera = nombre diccionario=dict({ "nombrelista":list{["":""]}, "nombrelista":list{["":""]} }) esto son 2 listas dentro de un diccionario separadas por una coma
+    #con la info anterior entonces podemos empezar a llenar la lista principal(categoría) con su respectiva secundaria(promociones), el orden es(ojo esto es dentro ya del diccionario)= "nombre categoria":{ "productos"{[{""":""}]}, "promociones"{[{"":""}]} } las llaves son la clave para saber que los productos y las promociones son específicamente de la categoría "nombrecategoría"
     "Dulces": {
         "producto":list ([ {"nombre":"Croissants", "valor":3500},{"nombre": "Donas", "valor":2000},{"nombre": "Pastelitos", "valor":1500},{"nombre":"Galletas", "valor":7000},{"nombre":"Pan dulce","valor":5000},{"nombre":"Ensaimadas", "valor":6000},{"nombre":"Tartaletas", "valor":4500},{"nombre":"Bizcochos", "valor":2500},{"nombre":"Palmeras", "valor":2000},{"nombre":"Conchas", "valor":2000}]) , "Promociones":list ([ {"indice":0,"nombre":"Descuento del 5% por comprar 5 unidades de pan","unidades":5, "descuento": 0.05} , {"indice":0,"nombre":"Descuento del 7% por comprar 10 unidades","unidades":5, "descuento": 0.05} ]) },     
 #categoria UNO
@@ -31,15 +31,22 @@ menu= dict({
 # Mensaje del banner
 mensaje_banner = "Hola usuario, bienvenido a Panadería Carlos, ¿qué se te antoja :D?"
 
-# Imprimir el banner
+# Imprimir el banner)(con solo un print basta pero me gusta decorar y busque este comando en chat gtp)
 print("*" * 70)
 print("*" + " " * 68 + "*")
 print("*" + mensaje_banner.center(68) + "*")
 print("*" + " " * 68 + "*")
 print("*" * 70)
 
-#queremos mostrar las categorias sacaremos las keys 
+#queremos mostrar las categorias para esp primero sacaremos las keys(las claves=categorias(dulces,salados,pasteles))
 listaCategoria=menu.keys()
+#ahora esas claves las volvemos una lista para orden de los datos 
 listaCategoria=list(listaCategoria)
+#Agregamos el bucle de for i,val para enumerar de modo que queden = 0. dato, 1.dato ...
 for i, val in enumerate(listaCategoria):
+    #finalmente imprimimos el catálogo: en la expresión
     print(f"{i}. {val}")
+#ahora debemos hacer que se pueda escojer una opcion de las 3:
+#ahora crearemos una variable para seleccionar la categoria (APARTE, OJO CON LAS SANGRÍAS Y QUE NO SE CONECTE CON LA EXPRESIÓN ANTERIOR)
+SelecciónlistaCategoria=int(input())#la expreción int(input()) nos deja seleccionar a partir de un número entero y este se guarda de la variable "SelecciónlistaCategoria"
+#una vez terminada la selección tendremos que mostrar la información dentro de esa categoría   
