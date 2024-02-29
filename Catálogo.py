@@ -49,4 +49,24 @@ for i, val in enumerate(listaCategoria):
 #ahora debemos hacer que se pueda escojer una opcion de las 3:
 #ahora crearemos una variable para seleccionar la categoria (APARTE, OJO CON LAS SANGRÍAS Y QUE NO SE CONECTE CON LA EXPRESIÓN ANTERIOR)
 SelecciónlistaCategoria=int(input())#la expreción int(input()) nos deja seleccionar a partir de un número entero y este se guarda de la variable "SelecciónlistaCategoria"
-#una vez terminada la selección tendremos que mostrar la información dentro de esa categoría   
+#una vez terminada la selección tendremos que mostrar la información dentro de esa categoría, usaremos una expresión que me muestre solo los productos de esa categoría seleccionada
+#primero definir esta variable de los productos de la categoria
+# Mostrar los productos de la categoría seleccionada
+productos = menu[listaCategoria[SelecciónlistaCategoria]]["producto"]
+#pero queremos que se muestren de manera enumerada sino toda la lista se verá tal cual esté escrita dentro del código, con llaves y todo {}
+#tenemos una variable con la lista de las categorias y la selección guardada, linea de código 42, 
+#para imprimirla tomaremos un "mensaje"+la lista de la categoria para posicionarnos y la selecci[on de la lista para acceder a esos datos, todo esto dentro de corcheas para tocar enumeraciones y posiciones
+print("Productos de la categoría", listaCategoria[SelecciónlistaCategoria])#así quedaría
+#ahora toca poner la condición para que pueda ser puesto en lista junto con una secuencia de el número+.+elproducto+elprecio
+for i, producto in enumerate(productos):#la condición para enumerar
+    #por ultimo imprimir el listado de la categoría
+    print(f"{i}. {producto['nombre']}: ${producto['valor']}") #se imprime todo ordenado y más presentable
+#ahora tenemos que seleccionar algún producto
+ProductoSeleccionado=int(input("Seleccione un producto: "))#de esta manera creamos una variable y selección al mismo tiempo
+#ahora toca pedir una cantidad al usuario del producto escojído para calcular un precio diferente
+Cantidaddeproducto=int(input("Cuantas unidades deseas: "))
+#deberiamos mostrarle al usuario ahora cuanto es el nuevo valor que tendrá su pedido junto mostrar que producto
+#Creamos una variable con el precio total que sería la operación de multiplicar la cantidad por el precio
+Preciototal=["valor"]*Cantidaddeproducto
+
+print()
