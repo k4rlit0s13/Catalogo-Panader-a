@@ -81,11 +81,11 @@ if Dinerodelusuario==Preciototal:
 
 elif Dinerodelusuario>Preciototal:#si es mayor debemos crear una variable de vueltos
     vueltos=Dinerodelusuario-Preciototal
-    print("Gracias por su compra usuario, aquí tienes tus vueltos: ", vueltos)                
+    print("Gracias por su compra usuario :D, aquí tienes tus vueltos: ", vueltos)                
 
 #pero sino se cumple nada de esto entonces vamos a hacer que no pueda comprar con un comentario y que pues deba ingresar más dinero
 else:
     print("Me temo que te hace falta dinero :c lo sentimos pero debes ingresar más dinero")
 
 
-##TENEMOS ToDO EL CATÁLOGO AHORA PERO FALTAN LAS PROMOCIONES, QUE HACEMOS?
+##TENEMOS ToDO EL CATÁLOGO AHORA PERO FALTAN LAS PROMOCIONES, las pondré arriba para que pueda mostrarse junto con la lista de productos
